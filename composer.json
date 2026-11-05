@@ -1,0 +1,25 @@
+{
+    "name": "dbravoan/dbcms-module-captcha",
+    "type": "dbcms-module",
+    "description": "Dynamic SVG and mathematical captcha generator with encrypted tokens for form submission and login protection.",
+    "license": "MIT",
+    "require": {
+        "dbravoan/dbcms-core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DbCms\\Modules\\Captcha\\": "./"
+        }
+    },
+    "extra": {
+        "dbcms": {
+            "name": "Security & Dynamic Captcha",
+            "identifier": "captcha",
+            "description": "Dynamic SVG and mathematical captcha generator with encrypted tokens for form submission and login protection.",
+            "provider": "DbCms\\Modules\\Captcha\\CaptchaModuleServiceProvider",
+            "is_pageable": false,
+            "author": "dbCMS Core Team",
+            "repository": "https://github.com/dbravoan/dbcms-module-captcha"
+        }
+    }
+}
